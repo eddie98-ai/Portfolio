@@ -1,34 +1,37 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# I've updated the subtitle to reflect your current role and expertise.
+subtitle: Lead DevOps & MLOps Engineer at <a href='https://maly.ai/' target="_blank" rel="noopener noreferrer">Maly Tech Ltd</a> | AI & Cloud Specialist
 
 profile:
   align: right
+  # IMPORTANT: Make sure the image file 'photo_2025-07-25_19-09-50.jpg' is placed in your '/assets/img/' directory.
   image: photo_2025-07-25_19-09-50.jpg
   image_circular: false # crops the image to make it circular
+  # Updated with your current location and email from the CV.
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ahmad.debow987@gmail.com</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}" in your .bib file
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true # shows a feed of news items from the _news folder
+  scrollable: true # adds a scrollbar if news items are too many
+  limit: 3 # shows the 3 most recent news items
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false # set to true if you plan to write blog posts
+  scrollable: true 
+  limit: 3 
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a passionate AI and MLOps Engineer dedicated to solving real-world problems through technology. My expertise lies at the intersection of **AI research**, **cloud computing**, and **software development**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, as the Lead DevOps & MLOps Engineer at Maly Tech Ltd, I architect and manage robust, scalable infrastructure for AI-powered fintech applications on **Amazon Web Services (AWS)** and **Google Cloud Platform (GCP)**. I specialize in building and maintaining CI/CD pipelines with GitLab, implementing full-stack MLOps workflows, and ensuring cloud security and compliance.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My academic background is in Information Systems Engineering from HIAST, where I graduated **first in my class**. My thesis, *Deep Learning for Launching and Thwarting Attacks on AI-based Intrusion Detection Systems (IDS)*, involved developing a novel framework using **Generative Adversarial Networks (GANs)** to create polymorphic poisoning attacks and integrating **SHAP** for model explainability. This research honed my skills in both offensive and defensive AI, driving my interest in creating resilient and transparent machine learning systems.
+
+Beyond my core technical roles, I enjoy engaging in leadership roles, contributing to the open-source community, and mentoring.

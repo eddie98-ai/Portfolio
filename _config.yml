@@ -2,28 +2,36 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Ahmad Debow
+# --- PERSONAL INFORMATION (MODIFIED) ---
+# Updated with your name and a professional title.
+title: Ahmad Debow (Edd)
+
+# Your name details from the CV.
 first_name: Ahmad
 middle_name: ""
 last_name: Debow
 
+# A brief, professional contact note.
 contact_note: >
-  Feel free to reach out via email or LinkedIn for research collaborations, academic inquiries, or AI/ML consulting.
+  Feel free to reach out for collaborations, project inquiries, or discussions on AI and cloud technologies.
 
+# --- SITE DESCRIPTION (MODIFIED) ---
+# A detailed description based on your CV's "About Me" and experience sections.
 description: >
-  AI researcher and engineer specializing in sign language processing, brain MRI analysis, and explainable machine learning.
-  Experienced in deep learning, computer vision, and MLOps with published work in biomedical signal processing and intelligent systems.
+  AI and MLOps Engineer with expertise in building and deploying scalable, real-world solutions. 
+  Specialized in deep learning (GANs, CNNs, LSTMs), cloud-native infrastructure (AWS, GCP), and end-to-end MLOps pipelines. 
+  Published researcher in biomedical AI and deep learning.
 
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Select images sourced from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+# --- KEYWORDS (MODIFIED) ---
+# A comprehensive list for better SEO.
+keywords: "Ahmad Debow, AI, MLOps, DevOps, Machine Learning, Deep Learning, Generative Adversarial Networks, GANs, AWS, GCP, Cloud Computing, Python, Docker, GitLab, CI/CD, Computer Vision, NLP, Large Language Models, Biomedical AI, Intrusion Detection Systems"
 
-keywords: AI, deep learning, computer vision, sign language, MRI, biomedical AI, academic portfolio, machine learning
-
+# --- GENERAL SETTINGS ---
 lang: en
 icon: 🧠 # AI/brain emoji fits your biomedical and AI focus
 
+# --- URL & DEPLOYMENT (IMPORTANT) ---
+# This should be your GitHub Pages URL.
 url: https://eddie98-ai.github.io
 baseurl: ""
 
@@ -56,7 +64,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -69,11 +77,13 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
-# Display links to the page with a preview object on social media.
-# see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+# --- SOCIAL MEDIA PREVIEWS (MODIFIED) ---
+# Enabled to create nice preview cards when you share your site link.
+serve_og_meta: true 
+serve_schema_org: false
+# Suggestion: add a path to your profile picture here for a default preview image.
+# e.g., og_image: /assets/img/prof_pic.jpg 
+og_image:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -107,13 +117,15 @@ related_blog_posts:
   enabled: true
   max_related: 5
 
-# Giscus comments (RECOMMENDED)
+# --- GISCUS COMMENTS (MODIFIED) ---
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
+  # IMPORTANT: This should be your username and the name of your GitHub Pages repository.
+  repo: eddie98-ai/eddie98-ai.github.io
+  # Go to giscus.app to get your repo_id and category_id after setting it up.
+  repo_id: # PASTE YOUR REPO_ID HERE
   category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
+  category_id: # PASTE YOUR CATEGORY_ID HERE
   mapping: title # identify discussions by post title
   strict: 1 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
@@ -123,19 +135,13 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -269,10 +275,12 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
-
+# --- PUBLICATION SETTINGS (MODIFIED & IMPORTANT) ---
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  # This is crucial. It tells Jekyll which author names to look for in your publications file.
+  # Based on your CV, your name appears as "A. Debow" and "A. Deeb".
+  last_name: [Debow, Deeb]
+  first_name: [Ahmad, A.]
 
   style: apa
   locale: en
